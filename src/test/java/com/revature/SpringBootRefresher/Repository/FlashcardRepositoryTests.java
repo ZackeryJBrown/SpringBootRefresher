@@ -18,7 +18,6 @@ public class FlashcardRepositoryTests {
     public FlashcardRepository flashcardRepository;
 
     @BeforeAll
-
     void setupTestData(){
         Flashcard card = new Flashcard(0,"Test Question?","Test answer", Flashcard.Category.SPRING);
         card = flashcardRepository.save(card);
